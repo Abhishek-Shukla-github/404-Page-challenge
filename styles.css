@@ -13,7 +13,6 @@
     align-items: center;
     align-self: center;
     height: 87vh;
-    flex-basis: 50rem;
 }
 .navbar{
     padding: 8px;
@@ -38,16 +37,11 @@
 }
 .text-info-div{
     width: 50%;
-    height: 50%;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    align-items:center;
+    min-height: 60vh;
 }
-/* .img-div{
-    text-align: center;
-    width: 50%;
-} */
+.img-div{
+    height: 60vh;
+}
 .header{
     height: 190px;
     font-family: 'Space Mono', monospace;
@@ -93,12 +87,13 @@ footer{
     text-align: center;
     justify-content: flex-end;
     padding: 5px;
-    margin-top: 10px;
+    min-height: 40px;
+    bottom: 0;
 }
 
 footer p{
-    padding: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    position: fixed;
     height: 17px;
     font-family: Montserrat;
     font-style: normal;
@@ -107,12 +102,8 @@ footer p{
     line-height: 17px;
 }
 
-
-
 @media (max-width : 1110px){
-    *{
-        background-color: violet;
-    }
+    
     .header{
         height: 140px;
         font-family: 'Space Mono', monospace;
@@ -123,28 +114,34 @@ footer p{
         letter-spacing: -0.035em;
         color: #333333;
     }
+    .scarecrow{
+        width: 30rem;
+        height: 27rem;
+    }
 }
 @media (max-width : 970px){
-    *{
-        background-color:blue;
+    
+    .scarecrow{
+        width: 25rem;
+        height: 22rem;
     }
     .header{
-        height: 90px;
-        font-family: 'Space Mono', monospace;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 55px;
-        margin-bottom: 20px;
+        height: 150px;
+        font-size: 50px;
+        line-height: 80px;
+        letter-spacing: -0.035em;
+        margin-bottom: 5px;
     }
     .text-info{
-        height: 70px;
-        font-size: 18px;
-        line-height: 25px;
-    }
-    .go-back-button{
-        width: 216px;
-        height: 68px;
-        margin-top: 3rem;
-        font-size: 14px;
+        height: 108px;
+        margin-top: 1.5rem;
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+        color: #4F4F4F;
+        text-align: left;
     }
 }
